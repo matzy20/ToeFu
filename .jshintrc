@@ -1,0 +1,10 @@
+{
+  "globals" :  {
+    "window" : true,
+    "Toefu" : true,
+    "Phaser" : true
+  },
+
+  "undef" : true,
+  "unused" : true
+}
