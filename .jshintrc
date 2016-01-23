@@ -1,7 +1,7 @@
 {
   "globals" :  {
     "window" : true,
-    "Toefu" : true,
+    "ToeFu" : true,
     "Phaser" : true
   },
 
