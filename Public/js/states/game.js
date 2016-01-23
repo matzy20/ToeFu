@@ -8,11 +8,12 @@ var INITIAL_POSITIONS = [
   //player 2
   {x : 600, y : 100}
 ];
+
+
   //class constructor
   ToeFu.Game = function() {
     this.player_1;
     this.player_2;
-
   };
 
   ToeFu.Game.prototype.create = function(){
@@ -30,7 +31,15 @@ var INITIAL_POSITIONS = [
   };
 
   ToeFu.Game.prototype.update = function(){
-
+    //less than dictates facing right or left
+    //else is opposite
+    if(this.player_1.x < this.player_2.x){
+      this.player_1.facing = ToeFu.Player.FACING.RIGHT;
+      this.player_2.facing = ToeFu.Player.FACING.LEFT;
+    } else { //player 1 is on right side
+      this.player_1.facing = ToeFu.Player.FACING.LEFT;
+      this.player_2.facing = ToeFu.Player.FACING.RIGHT;
+    }
   };
 
   ToeFu.Game.prototype.shutdown = function() {
