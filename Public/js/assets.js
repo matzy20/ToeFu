@@ -14,6 +14,7 @@
   SPRITESHEET : {
     PLAYER : {
       name : 'player',
+      //make sure name of assets file is CORRECT
       path : 'assets/graphics/players_100x96.png',
       width : 100,
       height : 96,
